@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ECS Deny Delete Cluster,Task Definition etc SCP",
+      "Effect": "Deny",
+      "Action": [
+        "ecs:DeleteCluster",
+        "ecs:DeleteService",
+        "ecs:DeleteTaskDefinitions",
+        "ecs:DeregisterTaskDefinition",
+        "ecs:DeregisterContainerInstance",
+        "ecs:DeleteAccountSetting",
+        "ecs:DeleteTaskSet"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
